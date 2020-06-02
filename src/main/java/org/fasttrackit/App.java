@@ -35,6 +35,19 @@ public class App
         System.out.println(petReference.preferedActivity);
 
 
-    }
+
+
+        Activity activityReference = new Activity();
+
+        activityReference.name = "find the reward";
+                activityReference.type = "stimulating the mind";
+                activityReference.resources = "ball with rewards";
+
+
+        System.out.println(activityReference.name);
+        System.out.println(activityReference.type);
+        System.out.println(activityReference.resources);
+
+                    }
 
 }
