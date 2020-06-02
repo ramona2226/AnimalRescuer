@@ -1,12 +1,11 @@
 package org.fasttrackit;
 
-public class Food {
+
+public class Food<localDate> {
 
     String name;
     double price;
-    LocalDate date;
     boolean disponibility;
-
 
 
 

@@ -1,5 +1,6 @@
 package org.fasttrackit;
 
+
 // one-line comment
 public class App 
 {
@@ -48,6 +49,33 @@ public class App
         System.out.println(activityReference.type);
         System.out.println(activityReference.resources);
 
-                    }
+
+
+         Adopter adopterReference = new Adopter ();
+         adopterReference.name = "Ramona";
+         adopterReference.gender = "female";
+         adopterReference.age = 28;
+         adopterReference.moneyBugget = 100;
+
+        System.out.println(adopterReference.name);
+        System.out.println(adopterReference.gender);
+        System.out.println(adopterReference.age);
+        System.out.println(adopterReference.moneyBugget);
+
+
+
+        Food foodReference = new Food();
+        foodReference.name = "Pedigree";
+        foodReference.disponibility = true;
+        foodReference.price = 29;
+
+        System.out.println(foodReference.name);
+        System.out.println(foodReference.disponibility);
+        System.out.println(foodReference.price);
+
+
+
+
+    }
 
 }
