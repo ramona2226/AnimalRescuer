@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 
-public class Food<localDate> {
+public class Food {
 
     String name;
     double price;
