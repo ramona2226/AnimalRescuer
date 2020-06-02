@@ -6,4 +6,5 @@ public class Activity {
     String type;
     String resources;
 
+
 }

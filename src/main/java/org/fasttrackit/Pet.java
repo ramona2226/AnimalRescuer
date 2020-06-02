@@ -1,15 +1,16 @@
 package org.fasttrackit;
 
-public class Mypet {
+public class Pet {
 
 
     String name;
     String breed;
     String color;
-    String age;
-    double animalPreferedFood;
+    String preferedActivity;
+    String animalPreferedFood;
     double healtyLevel;
-    double preferedActivity;
+    double hungryLevel;
+    int age;
     int animalSpirit;
 
 

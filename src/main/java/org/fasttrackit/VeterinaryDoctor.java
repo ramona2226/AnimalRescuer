@@ -5,8 +5,9 @@ public class VeterinaryDoctor
 
 
     String cliniqName;
-    String doctorName;
+    String name;
     String qualified;
+
 
 
 
