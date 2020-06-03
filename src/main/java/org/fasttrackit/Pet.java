@@ -2,20 +2,14 @@ package org.fasttrackit;
 
 public class Pet {
 
-
     String name;
     String breed;
     String color;
     String preferedActivity;
-    String animalPreferedFood;
+    String preferedFood;
     double healtyLevel;
     double hungryLevel;
     int age;
-    int animalSpirit;
-
-
-
-
-
+    double spiritLevel;
 
 }
