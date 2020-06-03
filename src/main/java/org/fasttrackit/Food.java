@@ -7,7 +7,7 @@ public class Food {
 
     String name;
     double price;
-    int grams;
+    int gramsQuantity;
     LocalDate expirationDate;
     boolean disponibility;
 

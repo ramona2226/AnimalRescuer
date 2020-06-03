@@ -61,16 +61,16 @@ public class App {
         foodReference.name = "Pedigree";
         foodReference.disponibility = true;
         foodReference.price = 29;
-        foodReference.grams =  35;
-
-
-
+        foodReference.gramsQuantity =  35;
         foodReference.expirationDate = LocalDate.of(2050, 6, 6);
+
 //        foodReference.expirationDate = LocalDate.now().plusYears(1).plusMonths(3).minusDays(7);
 
         System.out.println(foodReference.name);
         System.out.println(foodReference.disponibility);
         System.out.println(foodReference.price);
+        System.out.println(foodReference.gramsQuantity);
+        System.out.println(foodReference.expirationDate);
 
 
     }
