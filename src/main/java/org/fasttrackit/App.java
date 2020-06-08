@@ -73,6 +73,24 @@ public class App {
         System.out.println(foodReference.expirationDate);
 
 
+        Toys toys =  new Toys();
+       toys.name =  "ball";
+       toys.size = "big";
+       toys.color =  "red";
+       toys.sound = "false";
+
+        System.out.println(toys.name);
+        System.out.println(toys.size);
+        System.out.println(toys.color);
+
+
+
+
+
+
+
+
+
     }
 
 }
