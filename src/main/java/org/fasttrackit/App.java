@@ -82,8 +82,8 @@ public class App {
         System.out.println(toys.name);
         System.out.println(toys.size);
         System.out.println(toys.color);
-
-
+// constructor added
+          Pet secondPet = new Pet();
 
 
 
