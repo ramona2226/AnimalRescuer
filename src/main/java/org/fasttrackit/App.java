@@ -38,12 +38,11 @@ public class App {
 
         activityReference.name = "find the reward";
         activityReference.type = "stimulating the mind";
-        activityReference.resources = "ball with rewards";
 
 
         System.out.println(activityReference.name);
         System.out.println(activityReference.type);
-        System.out.println(activityReference.resources);
+
 
 
         Adopter adopterReference = new Adopter();
@@ -74,13 +73,18 @@ public class App {
 
 
         Toys toys =  new Toys();
-       toys.name =  "ball";
-       toys.size = "big";
        toys.color =  "red";
        toys.sound = "false";
 
+       Snack  snack = new Snack ();
+       snack.texture = "soft";
+
+
+        System.out.println(snack.texture);
+
+
         System.out.println(toys.name);
-        System.out.println(toys.size);
+
         System.out.println(toys.color);
 // constructor added
           Pet secondPet = new Pet();
