@@ -10,12 +10,21 @@ public class Adopter {
 
 
 
-    //"Ramona just gave some pedigree Chicken and Rice Flavor to Paco"
-    public <food> int feed(String pet, food) {
-        return 0;
-System.out.println (String + " is feeding the " + name + "with" + "pedigree Chiken and Rice Flower" +  "Paco";
+    //"Ramona just gave some pedigree Chicken and Rice Flavor to Paco";
+
+    public void feed(String name, String food) {
+
+System.out.println(name + " just gave some " + food + "to Paco");
+
+    }
+
+    {
+
+
+    }
+
 
 }
-}
+
 
 
