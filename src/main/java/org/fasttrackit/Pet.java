@@ -12,4 +12,6 @@ public class Pet {
     int age;
     double spiritLevel;
 
+
+
 }
