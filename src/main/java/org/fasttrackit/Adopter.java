@@ -23,13 +23,22 @@ public class Adopter {
 
         System.out.println(name + "just give some" + foodReference.name + "to" + petReference.name + ".");
 
-        public void recreationActivity (Pet petReference, Activity activityReference)
+        public void recreationActivity (Pet petReference, Activity activityReference) {
 
-        if (activityReference)
+        }
+
+        if (activityReference.name.equals(petReference.preferedActivity))
+            //System.out.println("It`s your prefered activity!");
             petReference.spiritLevel += 2;
         System.out.println(" Spirit level is: " + petReference.spiritLevel);
     } else {
-        System.out.println();
+        System.out.println("This is not his prefered activity.");
+
+        petReference.spiritLevel -- ;
+        System.out.println(" Spirit level is: " + petReference.spiritLevel);
+
+
+System.out.println(name + activityReference.name + petReference.name + petReference.spiritLevel + ".");
 
 
     }
