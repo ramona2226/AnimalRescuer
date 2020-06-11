@@ -45,6 +45,8 @@ public class App {
 
 
 
+
+
         Adopter adopterReference = new Adopter();
         adopterReference.name = "Ramona";
         adopterReference.gender = "female";
@@ -62,6 +64,9 @@ public class App {
         foodReference.price = 29;
         foodReference.gramsQuantity =  35;
         foodReference.expirationDate = LocalDate.of(2050, 6, 6);
+
+        adopterReference.feed(petReference, foodReference);
+
 
 //        foodReference.expirationDate = LocalDate.now().plusYears(1).plusMonths(3).minusDays(7);
 

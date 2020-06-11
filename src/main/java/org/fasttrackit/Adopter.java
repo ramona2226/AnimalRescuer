@@ -11,12 +11,11 @@ public class Adopter {
     //("Ramona just gave some pedigree Chicken and Rice Flover to Paco.)"
     public void feed(Pet petReference, Food foodReference) {
 
-        if foodReference.name.equals(petReference.preferedFood)) {
+        if (foodReference.name.equals(petReference.preferedFood)) {
             System.out.println("Yes, is my prefered food");
-            petReference.hungryLevel-=3;
+            petReference.hungryLevel -= 3;
             System.out.println("Hungry level is: " + petReference.hungryLevel);
-
-            } else {
+        } else {
             System.out.println("I don`t like this food, is not my prefered food.");
             petReference.hungryLevel--;
             System.out.println("Hungry level is:" + petReference.hungryLevel);
@@ -24,12 +23,16 @@ public class Adopter {
 
         System.out.println(name + "just give some" + foodReference.name + "to" + petReference.name + ".");
 
+        public void recreationActivity (Pet petReference, Activity activityReference)
 
-
+        if (activityReference)
+            petReference.spiritLevel += 2;
+        System.out.println(" Spirit level is: " + petReference.spiritLevel);
+    } else {
+        System.out.println();
 
 
     }
-
 }
 
 
