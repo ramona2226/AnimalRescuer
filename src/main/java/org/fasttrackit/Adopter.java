@@ -8,8 +8,19 @@ public class Adopter {
     double moneyBugget;
 
 
-    //"Ramona just gave some pedigree Chicken and Rice Flover to Paco."
+    //("Ramona just gave some pedigree Chicken and Rice Flover to Paco.)"
     public void feed(Pet petReference, Food foodReference) {
+
+        if foodReference.name.equals(petReference.preferedFood)) {
+            System.out.println("Yes, is my prefered food");
+            petReference.hungryLevel-=3;
+            System.out.println("Hungry level is: " + petReference.hungryLevel);
+
+            } else {
+            System.out.println("I don`t like this food, is not my prefered food.");
+            petReference.hungryLevel--;
+            System.out.println("Hungry level is:" + petReference.hungryLevel);
+        }
 
         System.out.println(name + "just give some" + foodReference.name + "to" + petReference.name + ".");
 
