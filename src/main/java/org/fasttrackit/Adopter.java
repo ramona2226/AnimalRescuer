@@ -8,23 +8,19 @@ public class Adopter {
     double moneyBugget;
 
 
-
-
-    //"Ramona just gave some pedigree Chicken and Rice Flavor to Paco";
-
-    public void feed(String name, String food) {
-
-System.out.println(name + " just gave some " + food + "to Paco");
+    //"Ramona just gave some pedigree Chicken and Rice Flover"
+    public void feed(Pet petReference, Food foodReference) {
 
     }
-
-    {
-
-
-    }
-
 
 }
+
+
+
+
+
+
+
 
 
 
