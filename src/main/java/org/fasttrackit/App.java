@@ -6,7 +6,7 @@ import java.time.LocalDate;
 // one-line comment
 public class App {
 
-    public static void main(String[] args, Object gr) {
+    public static void main(String[] args) {
         System.out.println("Hello dear pet!");
 
 // d
