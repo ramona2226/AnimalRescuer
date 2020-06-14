@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Hello dear pet!");
 
-// d
+
         Pet petReference = new Pet();
 
         petReference.name = "Paco";
@@ -17,8 +17,8 @@ public class App {
         petReference.color = "white";
         petReference.age = 4;
         petReference.preferedFood = "pedigree Chicken and Rice Flavor";
-        petReference.healtyLevel = 70;
-        petReference.hungryLevel = 25;
+        petReference.healtyLevel = 7;
+        petReference.hungryLevel = 9;
         petReference.spiritLevel = 8;
         petReference.preferedActivity = "catch the ball";
 
@@ -43,7 +43,7 @@ public class App {
         System.out.println(activityReference.name);
         System.out.println(activityReference.type);
 
-adopterReference.recreactionActivity (petReference, activityReference, petReference.spiritLevel);
+//adopterReference.recreactionActivity (petReference, activityReference, petReference.spiritLevel);
 
 
         Adopter adopterReference = new Adopter();
@@ -64,7 +64,10 @@ adopterReference.recreactionActivity (petReference, activityReference, petRefere
         foodReference.gramsQuantity =  35;
         foodReference.expirationDate = LocalDate.of(2050, 6, 6);
 
+
+
         adopterReference.feed(petReference, foodReference);
+        System.out.println(petReference.hungryLevel);
 
 
 //        foodReference.expirationDate = LocalDate.now().plusYears(1).plusMonths(3).minusDays(7);
@@ -75,23 +78,23 @@ adopterReference.recreactionActivity (petReference, activityReference, petRefere
         System.out.println(foodReference.gramsQuantity);
         System.out.println(foodReference.expirationDate);
 
-
-        Toys toys =  new Toys();
-       toys.color =  "red";
-       toys.sound = "false";
-
-       Snack  snack = new Snack ();
-       snack.texture = "soft";
-
-
-        System.out.println(snack.texture);
-
-
-        System.out.println(toys.name);
-
-        System.out.println(toys.color);
-// constructor added
-          Pet secondPet = new Pet();
+//
+//        Toys toys =  new Toys();
+//       toys.color =  "red";
+//       toys.sound = "false";
+//
+//       Snack  snack = new Snack ();
+//       snack.texture = "soft";
+//
+//
+//        System.out.println(snack.texture);
+//
+//
+//        System.out.println(toys.name);
+//
+//        System.out.println(toys.color);
+//  constructor added
+//          Pet secondPet = new Pet();
 
 
 
