@@ -48,7 +48,7 @@ public class App {
         System.out.println(activityReference.name);
         System.out.println(activityReference.type);
 
-//adopterReference.recreactionActivity (petReference, activityReference, petReference.spiritLevel);
+
 
 
         Adopter adopterReference = new Adopter();

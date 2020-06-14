@@ -11,12 +11,17 @@ public class Adopter {
     // ("Ramona just gave some Pedigree  to Paco.)"
     public void feed(Pet petReference, Food foodReference) {
 
+        System.out.println( "feeed");
+
 
         System.out.println(petReference.hungryLevel);
+
 
 if (foodReference.name.equals(petReference.preferedFood)) {
     System.out.println("This is my favorite food!");
     petReference.spiritLevel += 1;
+
+
 
 
 }
