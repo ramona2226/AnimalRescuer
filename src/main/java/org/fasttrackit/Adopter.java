@@ -8,28 +8,38 @@ public class Adopter {
     double moneyBugget;
 
 
-    // ("Ramona just gave some Pedigree to Paco.)"
+    // ("Ramona just gave some Pedigree  to Paco.)"
     public void feed(Pet petReference, Food foodReference) {
 
 
         System.out.println(petReference.hungryLevel);
 
-        if (foodReference.name.equals(petReference.preferedFood)) {
-            System.out.println("Yes, is my prefered food");
-            petReference.hungryLevel -= 3;
-            System.out.println("Hungry level is: " + petReference.hungryLevel);
-        } else {
-            System.out.println("I don`t like this food, is not my prefered food.");
-            petReference.hungryLevel--;
-            System.out.println("Hungry level is:" + petReference.hungryLevel);
+if (foodReference.name.equals(petReference.preferedFood)) {
+    System.out.println("This is my favorite food!");
+    petReference.spiritLevel += 1;
+
+
+}
+// exemple added
+       // if (foodReference.name.equals(petReference.preferedFood)) {
+        //    System.out.println("Yes, is my prefered food");
+        //    petReference.hungryLevel -= 3;
+         //   System.out.println("Hungry level is: " + petReference.hungryLevel);
+        //} else {
+           // System.out.println("I don`t like this food, is not my prefered food.");
+          //  petReference.hungryLevel--;
+          //  System.out.println("Hungry level is:" + petReference.hungryLevel);
         }
 
-        System.out.println(name + "just give some" + foodReference.name + "to" + petReference.name + ".");
+        //System.out.println(name + "just give some" + foodReference.name + "to" + petReference.name + ".");
 
 
-    }
+
+
 
     public void recreationActivity(Pet petReference, Activity activityReference) {
+
+
 
 
         if (activityReference.name.equals(petReference.preferedActivity)) {
