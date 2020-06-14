@@ -1,6 +1,8 @@
 package org.fasttrackit;
 
 
+
+
 import java.time.LocalDate;
 
 // one-line comment
@@ -66,8 +68,14 @@ public class App {
 
 
 
-        adopterReference.feed(petReference, foodReference);
+        ///adopterReference.feed(petReference, foodReference, adopterReference);
         System.out.println(petReference.hungryLevel);
+
+
+       // RecreactionActivity recreactionActivity = new RecreactionActivity();
+
+
+
 
 
 //        foodReference.expirationDate = LocalDate.now().plusYears(1).plusMonths(3).minusDays(7);
@@ -77,6 +85,7 @@ public class App {
         System.out.println(foodReference.price);
         System.out.println(foodReference.gramsQuantity);
         System.out.println(foodReference.expirationDate);
+
 
 //
 //        Toys toys =  new Toys();
