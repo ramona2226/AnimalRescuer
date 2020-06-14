@@ -2,6 +2,7 @@ package org.fasttrackit;
 
 public class Pet {
 
+    public int gettMoodLevel;
     String name;
     String breed;
     String color;

@@ -8,15 +8,11 @@ public class Adopter {
     double moneyBugget;
 
 
-    //("Ramona just gave some pedigree Chicken and Rice Flover to Paco.)"
+    // ("Ramona just gave some Pedigree to Paco.)"
     public void feed(Pet petReference, Food foodReference) {
 
-       petReference.hungryLevel = petReference.hungryLevel -= 1;
 
-
-
-
-
+        System.out.println(petReference.hungryLevel);
 
         if (foodReference.name.equals(petReference.preferedFood)) {
             System.out.println("Yes, is my prefered food");
@@ -30,29 +26,31 @@ public class Adopter {
 
         System.out.println(name + "just give some" + foodReference.name + "to" + petReference.name + ".");
 
-   // public void recreationActivity(Adopter adopterReference, Pet petReference) {
-
-//
-//        public void recreationActivity (Pet petReference, Activity activityReference) {
-//
-//        }
-//
-//        if (activityReference.name.equals(petReference.preferedActivity))
-//            //System.out.println("It`s your prefered activity!");
-//            petReference.spiritLevel += 2;
-//        System.out.println(" Spirit level is: " + petReference.spiritLevel);
-//    } else {
-//        System.out.println("This is not his prefered activity.");
-//
-//        petReference.spiritLevel -- ;
-//        System.out.println(" Spirit level is: " + petReference.spiritLevel);
-//
-//
-//System.out.println(name + activityReference.name + petReference.name + petReference.spiritLevel + ".");
-
 
     }
+
+    public void recreationActivity(Pet petReference, Activity activityReference) {
+
+
+        if (activityReference.name.equals(petReference.preferedActivity)) {
+            //System.out.println("It`s your prefered activity!");
+            petReference.spiritLevel += 2;
+            System.out.println(" Spirit level is: " + petReference.spiritLevel);
+        } else {
+            System.out.println("This is not his prefered activity.");
+
+            petReference.spiritLevel--;
+            System.out.println(" Spirit level is: " + petReference.spiritLevel);
+
+
+            System.out.println(name + activityReference.name + petReference.name + petReference.spiritLevel + ".");
+
+
+        }
+    }
 }
+
+
 
 
 

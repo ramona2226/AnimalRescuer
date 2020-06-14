@@ -18,7 +18,7 @@ public class App {
         petReference.breed = "shih tzu";
         petReference.color = "white";
         petReference.age = 4;
-        petReference.preferedFood = "pedigree Chicken and Rice Flavor";
+        petReference.preferedFood = "Pedigree";
         petReference.healtyLevel = 7;
         petReference.hungryLevel = 9;
         petReference.spiritLevel = 8;
@@ -40,6 +40,9 @@ public class App {
 
         activityReference.name = "find the reward";
         activityReference.type = "stimulating the mind";
+
+
+
 
 
         System.out.println(activityReference.name);
@@ -68,11 +71,13 @@ public class App {
 
 
 
-        ///adopterReference.feed(petReference, foodReference, adopterReference);
+        adopterReference.feed(petReference, foodReference);
+
+
         System.out.println(petReference.hungryLevel);
 
 
-       // RecreactionActivity recreactionActivity = new RecreactionActivity();
+        RecreactionActivity recreactionActivity = new RecreactionActivity();
 
 
 
