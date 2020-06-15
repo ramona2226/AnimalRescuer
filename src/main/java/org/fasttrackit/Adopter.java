@@ -11,16 +11,15 @@ public class Adopter {
     // ("Ramona just gave some Pedigree  to Paco.)"
     public void feed(Pet petReference, Food foodReference) {
 
-        System.out.println( "feeed");
+        System.out.println( "feed");
 
 
-        System.out.println(petReference.hungryLevel);
+        System.out.println("Spirit level before feed." + petReference.spiritLevel);
 
 
 if (foodReference.name.equals(petReference.preferedFood)) {
     System.out.println("This is my favorite food!");
-    petReference.spiritLevel += 1;
-
+    petReference.spiritLevel +=1;
 
 
 
@@ -42,28 +41,27 @@ if (foodReference.name.equals(petReference.preferedFood)) {
 
 
 
-    public void recreationActivity(Pet petReference, Activity activityReference) {
+//    public void recreationActivity(Pet petReference, Activity activityReference) {
+//
+//
+//
+//
+//        if (activityReference.name.equals(petReference.preferedActivity)) {
+//           System.out.println("It`s your prefered activity!");
+//            petReference.spiritLevel += 2;
+//            System.out.println(" Spirit level is: " + petReference.spiritLevel);
+//        } else {
+//            System.out.println("This is not his prefered activity.");
+//
+//            petReference.spiritLevel--;
+//            System.out.println(" Spirit level is: " + petReference.spiritLevel);
+//
+//
+//            System.out.println(name + activityReference.name + petReference.name + petReference.spiritLevel + ".");
+//
 
+   }
 
-
-
-        if (activityReference.name.equals(petReference.preferedActivity)) {
-            //System.out.println("It`s your prefered activity!");
-            petReference.spiritLevel += 2;
-            System.out.println(" Spirit level is: " + petReference.spiritLevel);
-        } else {
-            System.out.println("This is not his prefered activity.");
-
-            petReference.spiritLevel--;
-            System.out.println(" Spirit level is: " + petReference.spiritLevel);
-
-
-            System.out.println(name + activityReference.name + petReference.name + petReference.spiritLevel + ".");
-
-
-        }
-    }
-}
 
 
 

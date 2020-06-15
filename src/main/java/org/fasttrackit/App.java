@@ -21,7 +21,7 @@ public class App {
         petReference.preferedFood = "Pedigree";
         petReference.healtyLevel = 7;
         petReference.hungryLevel = 9;
-        petReference.spiritLevel = 8;
+        petReference.spiritLevel = 10;
         petReference.preferedActivity = "catch the ball";
 
 
@@ -38,7 +38,7 @@ public class App {
 
         Activity activityReference = new Activity();
 
-        activityReference.name = "find the reward";
+        activityReference.name ="catch the ball";
         activityReference.type = "stimulating the mind";
 
 
@@ -74,10 +74,13 @@ public class App {
         adopterReference.feed(petReference, foodReference);
 
 
-        System.out.println(petReference.hungryLevel);
+
+        System.out.println(petReference.spiritLevel);
 
 
-        RecreactionActivity recreactionActivity = new RecreactionActivity();
+      //  adopterReference.recreationActivity(petReference, activityReference);
+
+
 
 
 
