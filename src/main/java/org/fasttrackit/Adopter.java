@@ -20,10 +20,18 @@ public class Adopter {
 
         System.out.println("Spirit level before feed." + petReference.spiritLevel);
 
+        System.out.println("Hungry level before: " + petReference.hungryLevel);
+        petReference.hungryLevel --;
+
+        System.out.println("Hungry level after" + petReference.hungryLevel);
+
+
 
         if (foodReference.name.equals(petReference.preferedFood)) {
             System.out.println("This is my favorite food!");
-            petReference.spiritLevel += 3;
+            petReference.spiritLevel += 1;
+
+            System.out.println("Spirit level after feed is: " + petReference.spiritLevel);
 
         } else {
             System.out.println("I don`t like this food, is not my prefered food.");
@@ -34,9 +42,16 @@ public class Adopter {
             System.out.println("Hungry level is:" + petReference.hungryLevel);
         }
 
-        public void
+     //  public void recreationActivity(Pet petReference, Activity activityReference) {
+
+
+              // System.out.println("Ramona is making a recreation activity with Paco.");
+
+
+
+        }
     }
-}
+
 
 
 

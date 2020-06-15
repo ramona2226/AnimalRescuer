@@ -42,8 +42,8 @@ public class App {
         activityReference.type = "stimulating the mind";
 
 
-RecreationActivity recreationActivityReference = new RecreationActivity();
-recreationActivityReference.name = "catch the ball";
+//RecreationActivity recreationActivityReference = new RecreationActivity();
+//recreationActivityReference.name = "catch the ball";
 
 
 
