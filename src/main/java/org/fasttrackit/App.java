@@ -38,10 +38,12 @@ public class App {
 
         Activity activityReference = new Activity();
 
-        activityReference.name ="catch the ball";
+        activityReference.name = "catch the ball";
         activityReference.type = "stimulating the mind";
 
 
+RecreationActivity recreationActivityReference = new RecreationActivity();
+recreationActivityReference.name = "catch the ball";
 
 
 
@@ -73,12 +75,16 @@ public class App {
 
         adopterReference.feed(petReference, foodReference);
 
+       // adopterReference.play(petReference, activityReference);
+
 
 
         System.out.println(petReference.spiritLevel);
 
 
-      //  adopterReference.recreationActivity(petReference, activityReference);
+
+
+
 
 
 

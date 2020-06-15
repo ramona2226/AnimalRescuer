@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Adopter {
 
     String name;
@@ -8,67 +10,33 @@ public class Adopter {
     double moneyBugget;
 
 
-    // ("Ramona just gave some Pedigree  to Paco.)"
+    // (
+
+
     public void feed(Pet petReference, Food foodReference) {
 
-        System.out.println( "feed");
+        System.out.println("Ramona just gave some Pedigree  to Paco.");
 
 
         System.out.println("Spirit level before feed." + petReference.spiritLevel);
 
 
-if (foodReference.name.equals(petReference.preferedFood)) {
-    System.out.println("This is my favorite food!");
-    petReference.spiritLevel +=1;
+        if (foodReference.name.equals(petReference.preferedFood)) {
+            System.out.println("This is my favorite food!");
+            petReference.spiritLevel += 3;
 
+        } else {
+            System.out.println("I don`t like this food, is not my prefered food.");
 
+            System.out.println("Hungry level" + petReference.hungryLevel);
 
-}
-// exemple added
-       // if (foodReference.name.equals(petReference.preferedFood)) {
-        //    System.out.println("Yes, is my prefered food");
-        //    petReference.hungryLevel -= 3;
-         //   System.out.println("Hungry level is: " + petReference.hungryLevel);
-        //} else {
-           // System.out.println("I don`t like this food, is not my prefered food.");
-          //  petReference.hungryLevel--;
-          //  System.out.println("Hungry level is:" + petReference.hungryLevel);
+            petReference.hungryLevel --;
+            System.out.println("Hungry level is:" + petReference.hungryLevel);
         }
 
-        //System.out.println(name + "just give some" + foodReference.name + "to" + petReference.name + ".");
-
-
-
-
-
-//    public void recreationActivity(Pet petReference, Activity activityReference) {
-//
-//
-//
-//
-//        if (activityReference.name.equals(petReference.preferedActivity)) {
-//           System.out.println("It`s your prefered activity!");
-//            petReference.spiritLevel += 2;
-//            System.out.println(" Spirit level is: " + petReference.spiritLevel);
-//        } else {
-//            System.out.println("This is not his prefered activity.");
-//
-//            petReference.spiritLevel--;
-//            System.out.println(" Spirit level is: " + petReference.spiritLevel);
-//
-//
-//            System.out.println(name + activityReference.name + petReference.name + petReference.spiritLevel + ".");
-//
-
-   }
-
-
-
-
-
-
-
-
+        public void
+    }
+}
 
 
 
