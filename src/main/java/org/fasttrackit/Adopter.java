@@ -10,7 +10,7 @@ public class Adopter {
     double moneyBugget;
 
 
-    // (
+
 
 
     public void feed(Pet petReference, Food foodReference) {
@@ -21,10 +21,9 @@ public class Adopter {
         System.out.println("Spirit level before feed." + petReference.spiritLevel);
 
         System.out.println("Hungry level before: " + petReference.hungryLevel);
-        petReference.hungryLevel --;
+        petReference.hungryLevel--;
 
         System.out.println("Hungry level after" + petReference.hungryLevel);
-
 
 
         if (foodReference.name.equals(petReference.preferedFood)) {
@@ -38,9 +37,10 @@ public class Adopter {
 
             System.out.println("Hungry level" + petReference.hungryLevel);
 
-            petReference.hungryLevel --;
+            petReference.hungryLevel--;
             System.out.println("Hungry level is:" + petReference.hungryLevel);
         }
+    }
 
 
        public void recreation(Pet petReference, Activity activityReference) {
@@ -75,7 +75,7 @@ petReference.spiritLevel -=1;
 
 
         }
-    }
+
 
 
 
