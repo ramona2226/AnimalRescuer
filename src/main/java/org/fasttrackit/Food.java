@@ -14,11 +14,11 @@ public class Food {
 // add connector
 
 
-//    public Food(String name, Double price, int gramsQuantity, LocalDate expirationDate) {
-//        this.name = name;
-//        this.price = price;
-//        this.gramsQuantity = gramsQuantity;
-//        this.expirationDate = expirationDate;
+    public Food(String name, Double price, int gramsQuantity, LocalDate expirationDate) {
+        this.name = name;
+        this.price = price;
+        this.gramsQuantity = gramsQuantity;
+        this.expirationDate = expirationDate;
 
 
     }

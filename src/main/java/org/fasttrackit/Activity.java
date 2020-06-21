@@ -9,4 +9,4 @@ public class Activity {
         this.name = name;
     }
 
-    }
+}

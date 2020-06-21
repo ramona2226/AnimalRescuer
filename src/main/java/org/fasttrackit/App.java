@@ -11,18 +11,10 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Hello dear pet!");
 
-//        Pet.name = "Paco";
-//        Pet..healtyLevel = 7;
-//        Pet.hungryLevel = 9;
-//        Pet.spiritLevel = 10;
+        Toys preferedToy = new Toys("red", "squeke");
+      Pet petReference = new Pet("Paco",7,9,10,preferedToy);
 
-
-      // Pet petReference = new Pet();
-
-//        petReference.name = "Paco";
-//        petReference.healtyLevel = 7;
-//        petReference.hungryLevel = 9;
-//        petReference.spiritLevel = 10;
+//
 //
 //        petReference.name = "Paco";
 //        petReference.breed = "shih tzu";
@@ -66,20 +58,20 @@ public class App {
       //  System.out.println(activityReference.type);
 
 
-
+Adopter adopterReference = new Adopter("Ramona");
 
 //    Adopter adopterReference = new Adopter();
 //        adopterReference.name = "Ramona";
-//        adopterReference.gender = "female";
-//        adopterReference.age = 28;
-//        adopterReference.moneyBugget = 10000;
-//
-//        System.out.println(adopterReference.name);
-//        System.out.println(adopterReference.gender);
-//        System.out.println(adopterReference.age);
-//        System.out.println(adopterReference.moneyBugget);
-//
-//
+        adopterReference.gender = "female";
+        adopterReference.age = 28;
+        adopterReference.moneyBugget = 10000;
+
+        System.out.println(adopterReference.name);
+        System.out.println(adopterReference.gender);
+        System.out.println(adopterReference.age);
+        System.out.println(adopterReference.moneyBugget);
+
+
 //
 //
 //
