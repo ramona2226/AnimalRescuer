@@ -10,9 +10,6 @@ public class Adopter {
     double moneyBugget;
 
 
-
-
-
     public void feed(Pet petReference, Food foodReference) {
 
         System.out.println("Ramona just gave some Pedigree  to Paco.");
@@ -43,39 +40,40 @@ public class Adopter {
     }
 
 
+    public void recreation(Pet petReference, Activity activityReference) {
+        // System.out.println("Ramona is making a recreation activity with Paco.");
 
-       public void recreation(Pet petReference, Activity activityReference) {
-            // System.out.println("Ramona is making a recreation activity with Paco.");
+        if (activityReference.name.equals(petReference.preferedActivity)) {
 
-if (activityReference.name.equals(petReference.preferedActivity)) {
-
-    System.out.println("Spirit level before recreation activity is:" +petReference.spiritLevel);
-
-
-    System.out.println("This is my prefered activity!");
-petReference.spiritLevel +=2;
+            System.out.println("Spirit level before recreation activity is:" + petReference.spiritLevel);
 
 
-    System.out.println("Spirit level after recreation activity is:" + petReference.spiritLevel);
-
-} else {
-    System.out.println("Spirit level  before unprefered activity is:");
-    System.out.println("This activity is not my prefered activity!");
-
-petReference.spiritLevel -=1;
-
-    System.out.println("Spirit level after unprefered activity is: ");
+            System.out.println("This is my prefered activity!");
+            petReference.spiritLevel += 2;
 
 
+            System.out.println("Spirit level after recreation activity is:" + petReference.spiritLevel);
 
-}
+        } else {
+            System.out.println("Spirit level  before unprefered activity is:");
+            System.out.println("This activity is not my prefered activity!");
 
-}
+            petReference.spiritLevel -= 1;
 
-
+            System.out.println("Spirit level after unprefered activity is: ");
 
 
         }
+
+    }
+
+public Adopter(String name){
+    this.name = name;
+}
+
+
+
+}
 
 
 
