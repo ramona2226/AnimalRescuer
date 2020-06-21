@@ -62,7 +62,7 @@ Adopter adopterReference = new Adopter("Ramona");
 
 //    Adopter adopterReference = new Adopter();
 //        adopterReference.name = "Ramona";
-        adopterReference.gender = "female";
+   adopterReference.gender = "female";
         adopterReference.age = 28;
         adopterReference.moneyBugget = 10000;
 
@@ -72,19 +72,19 @@ Adopter adopterReference = new Adopter("Ramona");
         System.out.println(adopterReference.moneyBugget);
 
 
-//
-//
-//
-//        Food foodReference = new Food();
-//        foodReference.name = "Pedigree";
-//
-//
+
+
+LocalDate expirationDate = LocalDate.of(2050, 6,6);
+        Food foodReference = new Food("Pedigree", 29,35,expirationDate);
+     //   foodReference.name = "Pedigree";
+
+
 //        foodReference.disponibility = true;
 //        foodReference.price = 29;
 //        foodReference.gramsQuantity =  35;
-//        foodReference.expirationDate = LocalDate.of(2050, 6, 6);
-//
-//
+  //      foodReference.expirationDate = LocalDate.of(2050, 6, 6);
+
+
 
 
 
