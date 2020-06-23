@@ -9,7 +9,7 @@ public class Food {
     double price;
     int gramsQuantity;
     LocalDate expirationDate;
-    boolean disponibility;
+    String disponibility;
 
 // add connector
 
@@ -23,4 +23,47 @@ public class Food {
 
     }
 
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getGramsQuantity() {
+        return gramsQuantity;
+    }
+
+    public void setGramsQuantity(int gramsQuantity) {
+        this.gramsQuantity = gramsQuantity;
+    }
+
+    public LocalDate getExpirationDate() {
+        return expirationDate;
+    }
+
+    public void setExpirationDate(LocalDate expirationDate) {
+        this.expirationDate = expirationDate;
+    }
+
+    public String isDisponibility() {
+        return disponibility;
+    }
+
+    public void setDisponibility(String disponibility) {
+        this.disponibility = disponibility;
+    }
+
+    public void setGramsQuantity() {
+    }
 }

@@ -7,11 +7,17 @@ public class Snack  extends Food {
 
   String texture;
 
-  public Snack(String name, Double price, int gramsQuantity, LocalDate expirationDate) {
-    this.name = name;
-    this.price = price;
-    this.gramsQuantity = gramsQuantity;
-    this.expirationDate = expirationDate;
+  public Snack(String texture, LocalDate expirationDate) {
+    super("Pedigree", 29, 35, expirationDate);
+            this.texture = texture;
 
   }
+
+    public String getTexture() {
+        return texture;
+    }
+
+    public void setTexture(String texture) {
+        this.texture = texture;
+    }
 }

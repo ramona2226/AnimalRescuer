@@ -41,7 +41,7 @@ public class Adopter {
 
 
     public void recreation(Pet petReference, Activity activityReference) {
-        // System.out.println("Ramona is making a recreation activity with Paco.");
+         System.out.println("Ramona is making a recreation activity with Paco.");
 
         if (activityReference.name.equals(petReference.preferedActivity)) {
 
@@ -71,6 +71,37 @@ public Adopter(String name){
     this.name = name;
 }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getMoneyBugget() {
+        return moneyBugget;
+    }
+
+    public void setMoneyBugget(double moneyBugget) {
+        this.moneyBugget = moneyBugget;
+    }
 
 
 }
