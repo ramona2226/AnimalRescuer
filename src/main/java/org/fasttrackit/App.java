@@ -113,9 +113,18 @@ public class App {
 
         System.out.println(secondPet2.tag);
 
-        public static void("Paco", 10);
+
+        System.out.println("Spirit level before jummping" + petReference.spiritLevel);
+
+       // aici nu stiu cum sa scriu metoda  :(
+        // public void main (String[]args){
+
 
             System.out.println("My pet is jumping, so his feeling happy today" + petReference.spiritLevel);
         }
+
+
     }
 
+
+//}

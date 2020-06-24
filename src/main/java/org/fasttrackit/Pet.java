@@ -31,7 +31,7 @@ public class Pet<spiritLevel> {
 
     }
 
-    public static void main(String name, double spiritLevel) {
+    public void main(String name, double spiritLevel) {
         this.spiritLevel += spiritLevel;
         System.out.println("My pet is jumping, so his feeling happy today" + spiritLevel);
     }

@@ -10,11 +10,9 @@ public class SecondPet extends Pet {
         super("Sclipici", 5, 7, 4);
         this.tag = "necklace";
 
-        public SecondPet(){
-            this(new Pet());
+
 
         }
-    }
 
     @Override
     public String toString() {
