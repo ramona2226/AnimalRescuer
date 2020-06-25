@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class Pet<spiritLevel> {
+public class Pet{
 
     public int gettMoodLevel;
     String name;
@@ -12,7 +12,8 @@ public class Pet<spiritLevel> {
     double hungryLevel;
     int age;
     double spiritLevel;
-    Toys preferedToy; //obiect din clasa Toys.
+    Toys preferedToy;
+    //obiect din clasa Toys.
 
 
     //  pt exemplu de clasa toy   public Pet(String  name, double healtyLevel, double hungryLevel, double spiritLevel, Toys preferedToy)
@@ -23,7 +24,7 @@ public class Pet<spiritLevel> {
         this.healtyLevel = healtyLevel;
         this.hungryLevel = hungryLevel;
         this.spiritLevel = spiritLevel;
-       // this.preferedToy = preferedToy;
+        this.preferedToy = preferedToy;
 
 // am scris     SpiritLevel cu L mare  numele parametrului ca sa nu  ai folosesc this.
         //  public Pet(String  name, double healtyLevel, double hungryLevel, double spiritLevel) {
@@ -31,7 +32,7 @@ public class Pet<spiritLevel> {
 
     }
 
-    public void main(String name, double spiritLevel) {
+    public Pet (print spiritLevel()) {
         this.spiritLevel += spiritLevel;
         System.out.println("My pet is jumping, so his feeling happy today" + spiritLevel);
     }
