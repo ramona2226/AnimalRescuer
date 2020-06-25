@@ -1,8 +1,8 @@
 package org.fasttrackit;
 
-public class Pet{
+public class Pet {
 
-    public int gettMoodLevel;
+
     String name;
     String breed;
     String color;
@@ -12,7 +12,7 @@ public class Pet{
     double hungryLevel;
     int age;
     double spiritLevel;
-    Toys preferedToy;
+    // Toys preferedToy;
     //obiect din clasa Toys.
 
 
@@ -24,7 +24,6 @@ public class Pet{
         this.healtyLevel = healtyLevel;
         this.hungryLevel = hungryLevel;
         this.spiritLevel = spiritLevel;
-        this.preferedToy = preferedToy;
 
 // am scris     SpiritLevel cu L mare  numele parametrului ca sa nu  ai folosesc this.
         //  public Pet(String  name, double healtyLevel, double hungryLevel, double spiritLevel) {
@@ -32,17 +31,15 @@ public class Pet{
 
     }
 
-    public Pet (print spiritLevel()) {
-        this.spiritLevel += spiritLevel;
-        System.out.println("My pet is jumping, so his feeling happy today" + spiritLevel);
+    public void jumping() {
+        System.out.println("Spirit level before jumping is: " + spiritLevel);
+        if (spiritLevel > 8) {
+            System.out.println("Print spirit level");
+
+        }
+
+
     }
-
-
-
-
-
-
-
 
 
     public String getName() {

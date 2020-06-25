@@ -107,11 +107,16 @@ public class App {
         snack.setTexture("soft");
         System.out.println(snack.getTexture());
 
-        SecondPet secondPet2 = new SecondPet("necklace");
-        secondPet2.tag = "necklace";
+      Dog dog = new Dog("David", 5,5,5);
+      dog.tag = "necklace";
+        System.out.println("Pet tag is:" + dog.tag);
 
 
-        System.out.println(secondPet2.tag);
+        Cat cat = new Cat("Kitty", 8, 3, 6 );
+                cat.hairAccesorise = " bow hair clips";
+        System.out.println(cat.hairAccesorise);
+
+
 
 
         System.out.println("Spirit level before jummping" + petReference.spiritLevel);
@@ -120,7 +125,9 @@ public class App {
         // public void main (String[]args){
 
 
-            System.out.println("My pet is jumping, so his feeling happy today" + petReference.spiritLevel);
+
+        }
+
         }
 
 
