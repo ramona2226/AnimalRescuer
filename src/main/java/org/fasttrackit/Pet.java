@@ -31,14 +31,17 @@ public class Pet {
 
     }
 
-    public void jumping() {
+    public double jumping( ) {
         System.out.println("Spirit level before jumping is: " + spiritLevel);
-        if (spiritLevel > 8) {
-            System.out.println("Print spirit level");
+        if (spiritLevel >= 9) {
+            System.out.println("Pet is jumpping, so he is happy today");
+
+        } else {
+            System.out.println("Pet is unhappy today.");
+
 
         }
-
-
+return  spiritLevel;
     }
 
 

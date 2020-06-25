@@ -115,14 +115,15 @@ public class App {
         Cat cat = new Cat("Kitty", 8, 3, 6 );
                 cat.hairAccesorise = " bow hair clips";
         System.out.println(cat.hairAccesorise);
+petReference.jumping();
+        System.out.println(petReference.spiritLevel);
+
+
+public double jumping();
+        System.out.println(petReference.spiritLevel);
 
 
 
-
-        System.out.println("Spirit level before jummping" + petReference.spiritLevel);
-
-       // aici nu stiu cum sa scriu metoda  :(
-        // public void main (String[]args){
 
 
 
@@ -131,6 +132,6 @@ public class App {
         }
 
 
-    }
+
 
 //}
