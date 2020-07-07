@@ -9,8 +9,9 @@ import java.time.LocalDate;
 public class App {
 
     public static void main(String[] args) {
-        System.out.println("Hello dear pet!");
-
+        System.out.println("Hello dear pet! din main");
+        Game game = new Game();
+               game.start();
 
 
 //        Pet petReference = new Pet("Paco", 7, 9, 10);
