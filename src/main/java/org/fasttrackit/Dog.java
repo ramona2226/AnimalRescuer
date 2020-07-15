@@ -6,6 +6,8 @@ public class Dog extends Pet {
 
     public Dog(String name, double healtyLevel, double hungryLevel, double spiritLevel) {
         super(name, healtyLevel, hungryLevel, spiritLevel);
+
+
     }
 
 
