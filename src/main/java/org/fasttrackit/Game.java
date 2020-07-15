@@ -30,6 +30,8 @@ private List<Food> availableFood = new ArrayList<>();
     private  EntertainmentActivity[] availableActivities = new EntertainmentActivity[3];
 
      ArrayList<Food> nicefood  = new ArrayList<> ();
+   //aici nu stiu dc nu ma lasa sa atribui  referinta catre un nou obiect
+    // si nu inteleg cu ce ma ajuta  aceasta atribuire.
      availableFood = nicefood;
 
 
@@ -82,17 +84,30 @@ private List<Food> availableFood = new ArrayList<>();
 
    }
    public void allAvailableFood () {
+        // nu stiu cum pot afisa si numele mancarii din clasa Food respectiv Snack
       // System.out.println("Available food:" + Food(foodReference.this.name);
      //  System.out.println("Available food:" + Snack(snackReference.name));
 
-       for (int i = 0; i <= availableFood.size(); i++) {
+ //  bucla for simpla
+     //  for (int i = 0; i <= availableFood.size(); i++) {
 
+     //  apelez dupa indexul din lista    availableFood.get(i).getName();
 
-           System.out.println(i + availableFood.get(i).name);
+          // System.out.println(i + availableFood.get(i).name);
+// am incercat sa fac un  enhance for care
+for (Food aFood : availableFood){
+    System.out.println(aFood);
+
        }
    }
 
        public void allAvailableActivities () {
+           System.out.println("All available activities");
+
+// aceasi problema ca si la metoda allAvailableFood
+// +  ca activitatea mea din clasa Activiti are acelasi nume cu cea din Clasa Recreation Activity
+           // si nu stiu daca trebuie sa le schimb denumirea sau sa le afisez doar pe una, sau sa le afisez pe amandoua
+
 // incerc sa folosesc enhance for
         for (EntertainmentActivity activity: availableActivities ) {
             System.out.println(activity);
