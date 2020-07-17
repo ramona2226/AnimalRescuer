@@ -5,11 +5,12 @@ import java.time.LocalDate;
 
 public class Food {
 
-    String name;
-    double price;
-    int gramsQuantity;
-    LocalDate expirationDate;
-    String disponibility;
+ private int getName;
+    private String name;
+    private double price;
+    private int gramsQuantity;
+    private LocalDate expirationDate;
+    private String disponibility;
 
 // add connector
 
@@ -24,10 +25,7 @@ public class Food {
     }
 
 
-    public String getName() {
-        return name;
-    }
-
+    public String getName() { return name; }
     public void setName(String name) {
         this.name = name;
     }
@@ -67,6 +65,15 @@ public class Food {
     public void setGramsQuantity() {
     }
 
-
+    @Override
+    public String toString() {
+        return "Food{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", gramsQuantity=" + gramsQuantity +
+                ", expirationDate=" + expirationDate +
+                ", disponibility='" + disponibility + '\'' +
+                '}';
     }
+}
 

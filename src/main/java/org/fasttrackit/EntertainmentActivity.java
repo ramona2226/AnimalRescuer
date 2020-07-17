@@ -3,7 +3,7 @@ package org.fasttrackit;
 public class EntertainmentActivity {
 
    private String name;
-   private String time;
+   private int time;
 
     public String getName() {
 
@@ -15,12 +15,13 @@ public class EntertainmentActivity {
         this.name = name;
     }
 
-    public String getTime() {
+
+    public int getTime() {
         return time;
     }
 
     public void setTime(int time) {
-       // this.time = time;
+        this.time = time;
     }
 
     @Override

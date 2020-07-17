@@ -16,10 +16,11 @@ public class Game {
 
     public void start() {
         System.out.println("Hello dear pet, din metoda START!");
-        allAvailableFood ();
 
         initFood();
         initActivities();
+        allAvailableFood ();
+        allAvailableActivities();
 
     }
 //declar lista
@@ -29,19 +30,18 @@ private List<Food> availableFood = new ArrayList<>();
 
     private  EntertainmentActivity[] availableActivities = new EntertainmentActivity[3];
 
-     ArrayList<Food> nicefood  = new ArrayList<> ();
-   //aici nu stiu dc nu ma lasa sa atribui  referinta catre un nou obiect
-    // si nu inteleg cu ce ma ajuta  aceasta atribuire.
-     availableFood = nicefood;
+
+
 
 
     private void initFood() {
         Food food1 = new Food("Biscuit", 7, 15, LocalDate.of(2020, 7, 24));
-        System.out.println(food1);
+        System.out.println(food1.getName());
         Food food2 = new Food("Beef", 45, 21, LocalDate.of(2021, 2, 12));
-        System.out.println(food2);
+        System.out.println(food2.getName());
         Food food3 = new Food("Veggie fingers", 12, 11, LocalDate.of(2026, 8, 8));
-        System.out.println(food3);
+        System.out.println(food3.getName());
+
 
 
 
@@ -84,37 +84,30 @@ private List<Food> availableFood = new ArrayList<>();
 
    }
    public void allAvailableFood () {
-        // nu stiu cum pot afisa si numele mancarii din clasa Food respectiv Snack
-      // System.out.println("Available food:" + Food(foodReference.this.name);
-     //  System.out.println("Available food:" + Snack(snackReference.name));
 
  //  bucla for simpla
-     //  for (int i = 0; i <= availableFood.size(); i++) {
+      for (int i = 0; i <= availableFood.size(); i++) {
+      System.out.println( i + availableFood(i));
+      }
 
-     //  apelez dupa indexul din lista    availableFood.get(i).getName();
 
-          // System.out.println(i + availableFood.get(i).name);
-// am incercat sa fac un  enhance for care
-for (Food aFood : availableFood){
-    System.out.println(aFood);
+
+
+//       System.out.println("Available food: ");
+//for (Food aFood : availableFood){
+//    System.out.println(aFood.getName());
 
        }
-   }
 
-       public void allAvailableActivities () {
+
+    public void allAvailableActivities () {
            System.out.println("All available activities");
 
-// aceasi problema ca si la metoda allAvailableFood
-// +  ca activitatea mea din clasa Activiti are acelasi nume cu cea din Clasa Recreation Activity
-           // si nu stiu daca trebuie sa le schimb denumirea sau sa le afisez doar pe una, sau sa le afisez pe amandoua
+
 
 // incerc sa folosesc enhance for
         for (EntertainmentActivity activity: availableActivities ) {
-            System.out.println(activity);
-
-// mai imi trebuie si recreationActivityReference.getName din clasa RecreationActivity si activityReference.getName name din clasa Activity.
-
-
+            System.out.println(activity.getName());
 
        }
    }

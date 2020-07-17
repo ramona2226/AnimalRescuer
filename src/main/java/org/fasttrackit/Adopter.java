@@ -23,7 +23,7 @@ public class Adopter {
         System.out.println("Hungry level after" + petReference.hungryLevel);
 
 
-        if (foodReference.name.equals(petReference.preferedFood)) {
+        if (foodReference.getName().equals(petReference.preferedFood)) {
             System.out.println("This is my favorite food!");
             petReference.spiritLevel += 1;
 
