@@ -87,7 +87,7 @@ private List<Food> availableFood = new ArrayList<>();
 
  //  bucla for simpla
       for (int i = 0; i <= availableFood.size(); i++) {
-      System.out.println( i + availableFood(i));
+      System.out.println( i + availableFood.get(i).getName());
       }
 
 

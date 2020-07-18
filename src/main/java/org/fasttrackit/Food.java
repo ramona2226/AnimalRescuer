@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 public class Food {
 
- private int getName;
     private String name;
     private double price;
     private int gramsQuantity;
