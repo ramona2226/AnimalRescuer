@@ -5,11 +5,11 @@ import java.time.LocalDate;
 
 public class Food {
 
+    public LocalDate expirationDate;
     private String name;
     private double price;
     private int gramsQuantity;
-    private LocalDate expirationDate;
-    private String disponibility;
+      private String disponibility;
 
 // add connector
 
