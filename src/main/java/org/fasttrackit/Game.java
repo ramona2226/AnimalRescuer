@@ -6,7 +6,6 @@ import java.util.List;
 
 
 
-
 public class Game {
 
     Adopter adopter;
@@ -19,7 +18,7 @@ public class Game {
 
         initFood();
         initActivities();
-        allAvailableFood ();
+       allAvailableFood ();
         allAvailableActivities();
 
     }
@@ -76,26 +75,20 @@ private List<Food> availableFood = new ArrayList<>();
        availableActivities[2] = availableActivities3;
 
 
-       System.out.println("Available activities");
-
-       System.out.println("1." + availableActivities[0].getName() + ":" + availableActivities[0].getTime() + "minute.");
-       System.out.println("1." + availableActivities[1].getName() + ":" + availableActivities[1].getTime() + "minute.");
-       System.out.println("1." + availableActivities[2].getName() + ":" + availableActivities[2].getTime() + "minute.");
+//       System.out.println("Available activities");
+//
+//       System.out.println("1." + availableActivities[0].getName() + ":" + availableActivities[0].getTime() + "minute.");
+//       System.out.println("1." + availableActivities[1].getName() + ":" + availableActivities[1].getTime() + "minute.");
+//       System.out.println("1." + availableActivities[2].getName() + ":" + availableActivities[2].getTime() + "minute.");
 
    }
    public void allAvailableFood () {
-
+        System.out.println("All available food: ");
  //  bucla for simpla
-      for (int i = 0; i <= availableFood.size(); i++) {
-    //  System.out.println( i + availableFood.get(i).getName());
-      }
+      for (int i = 0 ; i < availableFood.size(); i++)
+          System.out.println( availableFood.get(i).getName());
 
 
-
-
-//       System.out.println("Available food: ");
-//for (Food aFood : availableFood){
-//    System.out.println(aFood.getName());
 
        }
 
@@ -106,10 +99,7 @@ private List<Food> availableFood = new ArrayList<>();
 
 
 // incerc sa folosesc enhance for
-        for (EntertainmentActivity activity: availableActivities ) {
-            System.out.println(activity.getName());
-
-       }
+        for (EntertainmentActivity activity: availableActivities ) System.out.println(activity.getName());
    }
 
          public Adopter getAdopter() {
